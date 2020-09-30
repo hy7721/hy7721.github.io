@@ -108,12 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 26px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 15px;
+  top: 20px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -519,7 +519,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* # aboutMe */
@@ -530,7 +530,7 @@ section {
 }
 
 .aboutMe .content {
-  padding: 30px 30px 30px 0;
+  padding: 20px 30px 30px 0;
 }
 
 .aboutMe .content h3 {
@@ -597,7 +597,7 @@ section {
 
 @media (max-width: 768px) {
   .aboutMe {
-    text-align: center;
+    text-align: left;
   }
 }
 
