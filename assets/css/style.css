@@ -1,8 +1,10 @@
 /* #General settings */
 
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: ;
+  font-family: 'Noto Sans KR', 'Raleway', sans-serif;
+  background: #FFF;
+  color: #333;
 }
 
 a {
@@ -14,8 +16,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Krub", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: red;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Back to top btn */
