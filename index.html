@@ -2,306 +2,510 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta content="박혜연의 포트폴리오입니다." name="descriptison">
-  <title>박혜연 Park Hyeyeon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="박혜연의 포트폴리오입니다">
+  <meta name="keywords" content="Portfolio">
+  <title>박혜연 HY Kelly</title>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- vendor CSS files -->
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- main CSS files -->
+  <link href="assets/css/common.css" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- #header -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo mr-auto"><a href="index.html">HY Kelly</a></h1>
-      <nav class="nav-menu d-none d-lg-block">
+      <h1 class="link-logo me-auto">
+        <a href="index.html">HY KELLY</a>
+      </h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li class="active"><a href="index.html">HOME</a></li>
-          <li><a href="#aboutMe">ABOUT</a></li>
-          <li><a href="#experience">EXPERIENCE</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto active" href="#wrapFeature">START</a></li>
+          <li><a class="nav-link scrollto" href="#wrapAbout">about</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#wrapBlog">blog</a></li> --><!-- 2021.3.14 주석처리 -->
+          <li><a class="nav-link scrollto " href="#wrapPortfolio">portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#wrapContact">AND end</a></li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
-  <!-- end #header Section -->
+  <!-- // #header -->
 
-  <!-- #hero Section -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
-      <h1>안녕하세요, 박혜연입니다.</h1>
-      <a href="#aboutMe" class="btn-get-started scrollto" title="view my work">View my work</a>
+  <!-- #wrapFeature -->
+  <section id="wrapFeature" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-out" data-aos-delay="100">
+        <strong class="tit-main text-center">
+          hello! i'm HYEYEON,
+          <br>
+          ui developer
+        </strong>
+        <a href="#wrapAbout" class="btn-get-started scrollto">View my work</a>
     </div>
   </section>
-  <!-- end #hero Section -->
+  <!-- // #wrapFeature -->
 
-  <!-- Main -->
+  <!-- #main -->
   <main id="main">
-    <!-- aboutMe Section -->
-    <section id="aboutMe" class="aboutMe">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="content col-xl-3 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="content">
-              <h3>aboutMe</h3>
-              <p>
-                저는 <strong>UI개발자 박혜연</strong>입니다.
-                <br>
-                <br>
-                웹표준, 웹접근성을 준수한 웹서비스를 구축하며 다양한 디바이스와 브라우저에 맞는 모듈과 페이지를 개발하기 위해 공부하고 노력합니다.
-              </p>
-              <!-- <a href="resume.html" target="_blank" class="btn-aboutMe" title="경력기술서 바로가기">경력기술서 보기<i class="bx bx-chevron-right"></i></a> -->
+
+    <!-- #wrapAbout -->
+    <section id="wrapAbout" class="wrap-about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2 class="tit-section">aboutMe</h2>
+          <p class="txt-section">
+            안녕하세요, 박혜연입니다 : )
+            <br>
+            웹표준, 웹접근성을 준수한 웹서비스를 구축하며,
+            <br>
+            다양한 디바이스와 브라우저에 맞는 모듈과 페이지를 개발하기 위해 공부하고 노력합니다.
+          </p>
+        </div>
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="ri-html5-line"></i>
+              <h3 class="tit-tab d-none d-lg-block">HTML</h3>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="ri-vuejs-line"></i>
+              <h3 class="tit-tab d-none d-lg-block">CSS</h3>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="ri-git-merge-line"></i>
+              <h3 class="tit-tab d-none d-lg-block">JS</h3>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="ri-computer-line"></i>
+              <h3 class="tit-tab d-none d-lg-block">Environment</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content pt-5">
+          <div class="tab-pane" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3" data-aos="fade-up" data-aos-delay="100">
+                <strong class="tit-subtab">HTML 마크업 경험</strong>
+                <ul>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    접근성, 웹 표준, 반응형 웹에 대한 이해
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    모바일 웹에 대한 이해
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    PC, Mobile 환경 내 크로스 브라우징에 대한 이해
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/img-about-01.png" class="img-fluid" alt="">
+              </div>
             </div>
           </div>
-          <div class="col-xl-9 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <img src="assets/img/img-html.png" style="width: 20%;" class="img-fluid align-items-center" alt="HTML">
-                  <ul>
-                    <li><i class="icofont-check"></i> 접근성, 웹 표준, 반응형 웹에 대한 이해</li>
-                    <li><i class="icofont-check"></i> 모바일 페이지 제작</li>
-                  </ul>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <img src="assets/img/img-css.png" style="width: 20%;" class="img-fluid align-items-center" alt="CSS">
-                  <ul>
-                    <li><i class="icofont-check"></i> Flexbox를 포함한 CSS Animation</li>
-                    <li><i class="icofont-check"></i> 반응형 레이아웃 (Bootstrap 포함)</li>
-                    <li><i class="icofont-check"></i> Cross-Browsing 이슈 해결</li>
-                    <li><i class="icofont-check"></i> CSS Preprocessor</li>
-                  </ul>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <img src="assets/img/img-js.png" style="width: 20%;" class="img-fluid align-items-center" alt="JavaSCript">
-                  <ul>
-                    <li><i class="icofont-check"></i> JavaScript</li>
-                    <li><i class="icofont-check"></i> jQuery</li>
-                    <li><i class="icofont-check"></i> tweenMax</li>
-                  </ul>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <img src="assets/img/img-col.png" style="width: 20%;" class="img-fluid align-items-center" alt="Collaboration">
-                  <ul>
-                    <li><i class="icofont-check"></i> SVN, Git을 통한 버전 관리</li>
-                    <li><i class="icofont-check"></i> Git, Jira를 통한 협업 경험</li>
-                    <li><i class="icofont-check"></i> Webpack, npm 사용 경험</li>
-                    <li><i class="icofont-check"></i> Photoshop, Zeplin, Sketch 경험</li>
-                  </ul>
-                </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3">
+                <strong class="tit-subtab">CSS 마크업 경험</strong>
+                <ul>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    SCSS, LESS 등 CSS Prerprocessor 사용 경험
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    Flexbox 및 CSS Animation
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    Bootstrap 5.0을 포함한 반응형 레이아웃에 대한 이해 및 경험
+                    <br>
+                    <span class="ps-4">(현재 포트폴리오는 Bootstrap 5.0으로 제작되었습니다.)
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/img-about-02.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3">
+                <strong class="tit-subtab">JavaScript 개발 경험</strong>
+                <ul>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    JavaScript(ES6+, Vanilla JS)에 대한 이해와 끊임없는 노력
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    jQuery, tweenMax 활용 경험
+                  </li>
+                </ul>
+                <strong class="tit-subtab">오픈소스 기여 경험</strong>
+                <p class="r-medium txt-subtab">2019 공개SW 컨트리뷰톤 프로젝트 참가 및 정보통신산업진흥원장상 수상</p>
+                <ul>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i> 
+                    과학기술정보통신부 주최, 정보통신산업진흥원 주관의 공개SW 컨트리뷰톤에 
+                    <br>
+                    <span class="txt-medium ps-4">‘자바스크립트 튜토리얼 한글화’</span> 프로젝트에 기여하여 장려상 수상
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <a href="https://ko.javascript.info/" target="_blank"> 모던 자바스크립트 튜토리얼 바로가기</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/img-about-03.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane active show" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3">
+                <strong class="tit-subtab">개발 및 협업 환경</strong>
+                <ul>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <span class="r-medium">Version Control System</span> Git, SVN을 이용한 코드 형상 관리
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <span class="r-medium">Collaboration Tools</span> Git, JIRA, Slack, Notion 등 협업 및 생산성 도구 경험
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <span class="r-medium">Module Bundler</span> Webpack을 통한 프로젝트 환경 경험
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <span class="r-medium">Package Manager</span> npm, yarn 사용 경험
+                  </li>
+                  <li>
+                    <i class="ico-check ri-arrow-right-s-fill"></i>
+                    <span class="r-medium">Design toolkits</span> Photoshop, Zeplin, Sketch 활용 경험
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/img-about-04.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end #aboutMe Section -->
+    <!-- // #wrapAbout -->
 
-    <!-- #experience Section -->
-    <section id="experience" class="experience" data-aos="fade-up">
-      <div class="container">
+    <!-- #wrapBlog --><!-- 2021.3.14 주석처리 -->
+    <!-- <section id="wrapBlog" class="wrap-blog section-bg ">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Experience</h2>
+          <h2 class="tit-section">Blog</h2>
+          <p>
+            Front-end 개발자로 성장하기 위해 학습하고 복습한 내용들을 Notion에 기록합니다.
+            <br>
+            현재 github, tistory 등에 따로 정리해둔 내용 등을 취합하여 정리 중입니다.
+          </p>
+          <a href="" target="_blank">Notion으로 이동</a>
         </div>
-        <div class="row content">
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/img-experience.png" class="img-fluid rounded" alt="2019 공개SW 컨트리뷰톤 장려상 수상">
-          </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
-            <h3>2019 공개SW 컨트리뷰톤 프로젝트 참가 및 정보통신산업진흥원장상 수상</h3>
-            <p class="font-italic">2019 자바스크립트 튜토리얼 한글화 프로젝트</p>
-            <ul>
-              <li><i class="icofont-check"></i> 과학기술정보통신부 주최, 정보통신산업진흥원 주관의 공개SW 컨트리뷰톤에 자바스크립트 튜토리얼 한글화 프로젝트에 참여하여 모던 자바스크립트 튜토리얼의 한국어 번역 및 리뷰를 진행했습니다.</li>
-              <li><i class="icofont-check"><a href="https://ko.javascript.info/" target="_blank"> 모던 자바스크립트 튜토리얼 바로가기</a></i></li>
-            </ul>
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <div class="blog-box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/images/img-blog.png" class="img-fluid" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end #experience Section -->
+    </section> -->
+    <!-- // #wrapBlog -->
 
-    <!-- #portfolio Section -->
-    <section id="portfolio" class="portfolio" data-aos="fade-up">
+    <!-- #wrapPortfolio -->
+    <section id="wrapPortfolio" class="wrap-portfolio" data-aos="fade-up">
       <div class="container">
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2 class="tit-section">Portfolio</h2>
           <p>
-            NEXON FIFA Online 4 팀에서 UI개발자로 근무하며 제작한 작업물과
+            Portfolio section은
+            <span class="r-medium">게임회사 NEXON FIFA Online 4 팀</span>, 
+            <span class="r-medium">웹 에이전시 CTTD</span>, 
+            그리고 <span class="r-medium">카카오 자회사 디케이테크인</span>에서 작업한 산출물로 구성되어 있습니다.
             <br>
-            CTTD LG전자 운영팀에서 근무하며 제작한 작업물입니다.
-            <br>
-            이외의 산출물은 보안상 포함되어 있지 않습니다.
+            보안상 모든 산출물이 포트폴리오에 포함되어 있지 않은 점 양해 부탁드립니다.
           </p>
         </div>
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/portfolio/img-nexon-01.png" class="img-fluid" alt="">
+            <img src="assets/images/portfolio/img-dkt-01.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
-            <h3>TT클래스 이벤트</h3>
-            <p class="font-italic">NEXON FIFA Online 4 UI개발</p>
+          <div class="col-md-7 pt-3" data-aos="fade-left" data-aos-delay="100">
+            <h3>디케이테크인(자사) 홈페이지 리뉴얼 2.0</h3>
+            <p>디케이테크인 프론트엔드 개발 업무</p>
             <ul>
-              <li><i class="icofont-check"></i><strong> Project date</strong> 2018. 09</li>
-              <li><i class="icofont-check"></i><strong> Project URL</strong><a target="_blank" href="http://events.fifaonline4.nexon.com/180913/tt?utm_source=pc&utm_medium=boardThumb&utm_campaign=20180913_TT"> http://events.fifaonline4.nexon.com/</a></li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2020. 12 ~ 2021. 2
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(PC)</strong><a target="_blank" href="https://www.dktechin.co.kr/service/main/index"> PC Web</a>
+              </li>
+
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(MO)</strong><a target="_blank" href="https://m.dktechin.com/service/main/index"> Mobile Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong><span class="r-medium"> HTML, CSS, JavaScript, jQuery, Velocity Template</span>을 이용하여 제작
+              </li>
             </ul>
-            <p>
-              <span class="color-point">HTML, CSS, JavaScript, jQuery, tweenMax</span>를 활용하여 제작한 넥슨 피파온라인4 이벤트페이지입니다.
-              <br>
-              <br>
-              Key visual에는 JavaScript를 통해 문구가 랜덤하게 나타나도록 했으며, tweenMax를 통해 스크롤 버튼을 감각적으로 표시하도록 했습니다. 또한 JavaScript의 onmousewheel 이벤트를 통해 다음 페이지로 넘어갈 수 있게끔 구현했습니다. 팝업창 등은 jQuery를 활용하였습니다.
-            </p>
           </div>
         </div>
         <div class="row content">
           <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/portfolio/img-nexon-02.png" class="img-fluid" alt="">
+            <img src="assets/images/portfolio/img-cttd-01.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4 order-2 order-md-1" data-aos="fade-right">
-            <h3>접속 이벤트</h3>
-            <p class="font-italic">NEXON FIFA Online 4 UI개발</p>
-            <ul>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2018. 10 - 2018. 11</li>
-              <li><i class="icofont-check"></i><strong>Project URL</strong><a target="_blank" href="http://fifaonline4.nexon.com/news/events/view?n4ArticleSN=146&n4pageno=15&strsearch=&emsearchtype=title&n4articlecategorysn=0&n4articlecategory2sn=1&_=1571569981284"> http://events.fifaonline4.nexon.com/</a></li>
-            </ul>
-            <p>
-              <span class="color-point">HTML, CSS, JavaScript, tweenMax</span>를 활용하여 제작한 넥슨 피파온라인4 이벤트페이지입니다.
-              <br>
-              <br>
-              tweenMax를 통해 Key visual에 효과를 구현하였으며, JavaScript를 통해 요일마다 다른 이벤트 이미지가 나타나도록 하였습니다.
-            </p>
-          </div>
-        </div>
-        <div class="row content">
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/portfolio/img-nexon-03.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
-            <h3>프리미엄 PC방 이벤트</h3>
-            <p class="font-italic">NEXON FIFA Online 4 UI개발</p>
-            <ul>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2018. 08 - 2018. 10</li>
-              <li><i class="icofont-check"></i><strong>Project URL</strong><a target="_blank" href="http://events.fifaonline4.nexon.com/180830/premium?utm_source=pc&utm_medium=list&utm_campaign=180830_premium"> http://events.fifaonline4.nexon.com/</a></li>
-            </ul>
-            <p>
-              <span class="color-point">HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작한 넥슨 피파온라인4 이벤트페이지입니다.
-              <br>
-              <br>
-              탭 콘텐츠와 팝업창 등을 jQuery로 구현하였습니다.
-            </p>
-          </div>
-        </div>
-        <div class="row content">
-          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/portfolio/img-cttd-01.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4 order-2 order-md-1" data-aos="fade-right">
+          <div class="col-md-7 pt-3 order-2 order-md-1" data-aos="fade-right">
             <h3>eBay 판매자 통합관리툴</h3>
-            <p class="font-italic">CTTD 퍼블리싱팀 업무</p>
+            <p>CTTD 퍼블리싱팀 업무</p>
             <ul>
-              <li><i class="icofont-check"></i><strong>Client</strong> eBay</li>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2020. 01 - 2020. 02</li>
-              <li><i class="icofont-check"></i><strong>Project URL</strong> 보안상의 이유로 URL 첨부가 어렵습니다.</li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Client</strong> eBay
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2020. 01 - 2020. 02
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL</strong> 보안상의 이유로 URL 첨부가 어렵습니다.
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong><span class="r-medium"> HTML, SASS</span>를 활용하여 운영 중인 eBay 통합 판매자 페이지. 웹 브라우저 호환성을 위해 Internet Explorer 8까지 대응.
+              </li>
             </ul>
-            <p>
-              <span class="color-point">HTML, SASS, LESS</span>를 활용하여 운영 중인 eBay 통합 판매자 페이지(eBay Sales Manager Plus)입니다.
-              <br>
-              <br>
-              웹 브라우저 호환성을 위해 Internet Explorer 8까지 대응했습니다.
-            </p>
           </div>
         </div>
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/portfolio/img-cttd-02.png" class="img-fluid" alt="">
+            <img src="assets/images/portfolio/img-cttd-02.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-md-7 pt-3" data-aos="fade-left" data-aos-delay="100">
             <h3>LG TV 어벤져스 특별전</h3>
-            <p class="font-italic">CTTD 퍼블리싱팀 업무</p>
+            <p>CTTD 퍼블리싱팀 업무</p>
             <ul>
-              <li><i class="icofont-check"></i><strong>Client</strong> LG전자</li>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2019. 5</li>
-              <li><i class="icofont-check"></i><strong>Project URL(PC)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/04/1101_ha_tv_avengers/11st/event.html"> PC Web</a></li>
-              <li><i class="icofont-check"></i><strong>Project URL(Mobile)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/04/1101_ha_tv_avengers/11st/event_m.html"> Mobile Web</a></li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Client</strong> LG전자
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2019. 5
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(PC)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/04/1101_ha_tv_avengers/11st/event.html"> PC Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(MO)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/04/1101_ha_tv_avengers/11st/event_m.html"> Mobile Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong><span class="r-medium"> HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작한 이벤트 페이지. JavaScript를 통해 Key visual 콘텐츠가 시간차를 두고 나타나게 구현하였으며, 그 밖의 슬라이더 등의 효과는 CSS Animation 및 jQuery를 활용.
+              </li>
             </ul>
-            <p>
-              e커머스 플랫폼에 배포한 LG전자 프로모션 페이지입니다. <span class="color-point">HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작하였습니다.
-              <br>
-              <br>
-              JavaScript를 통해 Key visual 콘텐츠가 시간을 두고 나타나게 구현하였으며, 그 밖의 슬라이더 등의 효과는 CSS Animation 및 jQuery를 활용하였습니다.
-            </p>
           </div>
         </div>
         <div class="row content">
           <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/portfolio/img-cttd-03.png" class="img-fluid" alt="">
+            <img src="assets/images/portfolio/img-cttd-03.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4 order-2 order-md-1" data-aos="fade-right">
+          <div class="col-md-7 pt-3 order-2 order-md-1" data-aos="fade-right">
             <h3>LG 울트라 PC 라이젠 기획전</h3>
-            <p class="font-italic">CTTD 퍼블리싱팀 업무</p>
+            <p>CTTD 퍼블리싱팀 업무</p>
             <ul>
-              <li><i class="icofont-check"></i><strong>Client</strong> LG전자</li>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2019. 12</li>
-              <li><i class="icofont-check"></i><strong>Project URL(PC)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/11/2001_it_ultraRyzen_december/11st/event.html"> PC Web</a></li>
-              <li><i class="icofont-check"></i><strong>Project URL(Mobile)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/11/2001_it_ultraRyzen_december/11st/event_m.html"> Mobile Web</a></li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Client</strong> LG전자
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2019. 12
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(PC)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/11/2001_it_ultraRyzen_december/11st/event.html"> PC Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(MO)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/11/2001_it_ultraRyzen_december/11st/event_m.html"> Mobile Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong><span class="r-medium"> HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작한 이벤트 페이지. CSS Animation을 이용해 Key visual에 효과를 구현하였으며, 그 외의 스크롤 이벤트 등은 JavaScript와 jQuery를 사용.
+              </li>
             </ul>
-            <p>
-              e커머스 플랫폼에 배포한 LG전자 프로모션 페이지입니다. <span class="color-point">HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작하였습니다.
-              <br>
-              <br>
-              CSS Animation을 이용해 Key visual에 효과를 구현하였으며, 그 외의 스크롤 이벤트 등은 JavaScript와 jQuery를 사용하였습니다.
-            </p>
           </div>
         </div>
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/portfolio/img-cttd-04.png" class="img-fluid" alt="">
+            <img src="assets/images/portfolio/img-cttd-04.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-md-7 pt-3" data-aos="fade-left" data-aos-delay="100">
             <h3>LG 17인치 통합 기획전</h3>
-            <p class="font-italic">CTTD 퍼블리싱팀 업무</p>
+            <p>CTTD 퍼블리싱팀 업무</p>
             <ul>
-              <li><i class="icofont-check"></i><strong>Client</strong> LG전자</li>
-              <li><i class="icofont-check"></i><strong>Project date</strong> 2020. 01</li>
-              <li><i class="icofont-check"></i><strong>Project URL(PC)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/12/1801_it_17inch_united_January/11st/event.html"> PC Web</a></li>
-              <li><i class="icofont-check"></i><strong>Project URL(Mobile)</strong><a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/12/1801_it_17inch_united_January/11st/event_m.html"> Mobile Web</a></li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Client</strong> LG전자
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2020. 01
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(PC)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/12/1801_it_17inch_united_January/11st/event.html"> PC Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL(MO)</strong>
+                <a target="_blank" href="http://open.lge.co.kr/link/2019_new/promo/12/1801_it_17inch_united_January/11st/event_m.html"> Mobile Web</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong>
+                <span class="r-medium"> HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작한 이벤트 페이지. CSS Animation을 이용해 Key visual에 효과를 구현하였고, JavaScript와 jQuery를 활용해 Sticky Navigation과 Image Slider에 적용.
+              </li>
             </ul>
-            <p>
-              e커머스 플랫폼에 배포한 LG전자 프로모션 페이지입니다. <span class="color-point">HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작하였습니다.
-              <br>
-              <br>
-              CSS Animation을 이용해 Key visual에 효과를 구현하였고, JavaScript와 jQuery를 활용해 Sticky Navigation과 Image Slider에 적용하였습니다.
-            </p>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/images/portfolio/img-nexon-01.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-3 order-2 order-md-1" data-aos="fade-right">
+            <h3>TT클래스 이벤트</h3>
+            <p>NEXON FIFA Online 4 UI개발</p>
+            <ul>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong> Project date</strong> 2018. 09
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong> Project URL</strong>
+                <a target="_blank" href="http://events.fifaonline4.nexon.com/180913/tt?utm_source=pc&utm_medium=boardThumb&utm_campaign=20180913_TT"> http://events.fifaonline4.nexon.com/</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong>
+                <span class="r-medium"> HTML, CSS, JavaScript, jQuery, tweenMax</span>를 활용하여 제작한 이벤트 페이지. Key visual에는 JavaScript를 통해 문구가 랜덤하게 나타나도록 했으며, tweenMax를 통해 스크롤 버튼을 감각적으로 표시하도록 했습니다. 또한 JavaScript의 onmousewheel 이벤트를 통해 다음 페이지로 넘어갈 수 있게끔 구현했습니다. 팝업창 등은 jQuery를 활용.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/images/portfolio/img-nexon-02.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-3" data-aos="fade-left" data-aos-delay="100">
+            <h3>접속 이벤트</h3>
+            <p>NEXON FIFA Online 4 UI개발</p>
+            <ul>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2018. 10 - 2018. 11
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL</strong><a target="_blank" href="http://fifaonline4.nexon.com/news/events/view?n4ArticleSN=146&n4pageno=15&strsearch=&emsearchtype=title&n4articlecategorysn=0&n4articlecategory2sn=1&_=1571569981284"> http://events.fifaonline4.nexon.com/</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong>
+                <span class="r-medium"> HTML, CSS, JavaScript, tweenMax</span>를 활용하여 제작한 이벤트 페이지. tweenMax를 통해 Key visual에 효과를 구현하였으며, JavaScript를 통해 요일마다 다른 이벤트 이미지가 나타나도록 함.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/images/portfolio/img-nexon-03.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-3 order-2 order-md-1" data-aos="fade-right">
+            <h3>프리미엄 PC방 이벤트</h3>
+            <p>NEXON FIFA Online 4 UI개발</p>
+            <ul>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project date</strong> 2018. 08 - 2018. 10
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project URL</strong>
+                <a target="_blank" href="http://events.fifaonline4.nexon.com/180830/premium?utm_source=pc&utm_medium=list&utm_campaign=180830_premium"> http://events.fifaonline4.nexon.com/</a>
+              </li>
+              <li>
+                <i class="ico-check ri-arrow-right-s-fill"></i>
+                <strong>Project Description</strong>
+                <span class="r-medium"> HTML, CSS, JavaScript, jQuery</span>를 활용하여 제작한 이벤트 페이지. 탭 콘텐츠와 팝업창 등을 jQuery로 구현.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- end #portfolio Section -->
-
-    <!-- #contact Section -->
-    <section id="contact" class="contact section-bg">
+    <!-- // #wrapPortfolio Section -->
+  
+  
+    <!-- #wrapContact Section -->
+    <section id="wrapContact" class="wrap-contact">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2 class="tit-section">Contact</h2>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
@@ -322,36 +526,28 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Text Me</h3>
-                  <p>whenever you want</p>
+                  <p>Whenever you want! :)</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mt-4 mt-md-0">
+          <div class="col-lg-6">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="mb-3">
+              <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
@@ -362,46 +558,43 @@
         </div>
       </div>
     </section>
-    <!-- end #contact Section -->
+    <!-- // #wrapContact Section -->
   </main>
-  <!-- end #main -->
+  <!-- // #main -->
 
   <!-- #footer -->
   <footer id="footer">
     <div class="container d-md-flex py-4">
-      <div class="mr-md-auto text-center text-md-left">
+      <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Hyeyeon Park</span></strong>. All Rights Reserved
+          &copy; Copyright <strong>Kelly Hyeyeon Park</strong>. All Rights Reserved
         </div>
         <div class="credits">
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://github.com/hy7721" title="github" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://hy-kelly.tistory.com/" title="tistsory" target="_blank"><i class="bx bx-pencil"></i></a>
-        <a href="https://www.linkedin.com/in/hyeyeon-park-9757071b8/" title="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="https://github.com/hy7721" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.notion.so/Kelly-s-Front-end-Wiki-Page-1a6ab709efe54a16994d716d5e2b8d79" target="_blank"><i class="bx bx-pencil"></i></a>
+        <a href="https://www.linkedin.com/in/hyeyeon-park-9757071b8/" target="_blank"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </footer>
-  <!-- end Footer -->
+  <!-- // #footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <!-- vendor JS files -->
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- main JS file -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
