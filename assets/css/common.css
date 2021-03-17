@@ -62,9 +62,9 @@ ol, ul {
 .txt-section {
   display: inline-block;
   margin-bottom: 0;
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
-  color; #555;
+  color: #555;
 }
 
 .tit-sub {
@@ -161,11 +161,11 @@ section {
 }
 
 /* disable aos animation delay on mobile devices */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
+} */
 
 /* header */
 #header {
@@ -350,17 +350,17 @@ section {
   background: #212121;
 }
 
-#wrapFeature strong {
+#wrapFeature h2 {
   margin: 0 0 20px 0;
   line-height: 56px;
   color: #FFF;
 }
 
-#wrapFeature h2 {
+/* #wrapFeature h2 {
   margin: 10px 0 0 0;
   font-size: 24px;
   color: #FFF;
-}
+} */
 
 @media (max-width: 768px) {
   #wrapFeature {
@@ -447,13 +447,12 @@ section {
 }
 
 #wrapAbout .txt-subtab {
-  padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #wrapAbout .tab-pane p:last-child {
   margin-bottom: 0;
 }
-
 
 /* #wrapBlog */
 #wrapBlog .tit-section {
@@ -533,6 +532,14 @@ section {
 }
 
 /* #wrapContact */
+#wrapContact h2 {
+  margin-bottom: 0;
+}
+
+#wrapContact .tit-section {
+  margin: 0;
+}
+
 #wrapContact .info-box {
   color: #444;
   text-align: center;
@@ -541,12 +548,22 @@ section {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  #wrapContact .section-title {
+    padding-bottom: 60px;
+  }
+
+  #wrapContact .info-box {
+    margin-top: 20px;
+  }
+}
+
 #wrapContact .info-box i {
-  font-size: 32px;
+  font-size: 28px;
   color: #C33949;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f8d4d5;
+  border: 2px dotted #E46171;
 }
 
 #wrapContact .info-box h3 {
@@ -561,91 +578,6 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-}
-
-#wrapContact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
-  border-radius: 4px;
-}
-
-#wrapContact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #A12E3B;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#wrapContact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-#wrapContact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#wrapContact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#wrapContact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-#wrapContact .php-email-form .form-group {
-  margin-bottom: 25px;
-}
-
-#wrapContact .php-email-form input,
-#wrapContact .php-email-form textarea {
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-#wrapContact .php-email-form input:focus,
-#wrapContact .php-email-form textarea:focus {
-  border-color: #111111;
-}
-
-#wrapContact .php-email-form input {
-  padding: 10px 15px;
-}
-
-#wrapContact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-#wrapContact .php-email-form button[type="submit"] {
-  background: #C33949;
-  border: 0;
-  padding: 10px 32px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-#wrapContact .php-email-form button[type="submit"]:hover {
-  background: #A12E3B;
 }
 
 @-webkit-keyframes animate-loading {
