@@ -338,6 +338,7 @@ section {
 }
 
 /* #wrapFeature */
+
 #wrapFeature {
   position: relative;
   width: 100%;
@@ -447,6 +448,7 @@ section {
 
 
 /* #wrapBlog */
+
 #wrapBlog.section-bg {
   padding: 140px 0;
 }
