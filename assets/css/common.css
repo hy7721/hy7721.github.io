@@ -516,6 +516,12 @@ section {
   color: #FFF;
 }
 
+#wrapBlog .blog-link a:hover {
+  border-color: #C33949;
+  color: #FFF;
+  background: #C33949;
+}
+
 #wrapBlog .cont-blog:hover::before {
   opacity: 1;
 }
