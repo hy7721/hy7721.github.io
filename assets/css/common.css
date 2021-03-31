@@ -497,30 +497,30 @@ section {
   transition: 0.3s;
   color: #333;
 }
-#wrapAbout .nav-link:hover {
+#wrapExperience .nav-link:hover {
   color: #C33949;
 }
-#wrapAbout .nav-link.active {
+#wrapExperience .nav-link.active {
   border-color: #C33949;
   color: #FFF;
   background: #C33949;
 }
 
-#wrapAbout .nav-link i {
+#wrapExperience .nav-link i {
   padding-right: 15px;
   font-size: 48px;
 }
 
-#wrapAbout .nav-link h3 {
+#wrapExperience .nav-link h3 {
   margin: 0;
 }
 
-#wrapAbout .tit-subtab {
+#wrapExperience .tit-subtab {
   padding-bottom: 15px;
 }
 
 @media (max-width: 991px) {
-  #wrapAbout .nav-link i {
+  #wrapExperience .nav-link i {
     padding: 0;
     line-height: 1;
     font-size: 36px;
