@@ -528,28 +528,28 @@ section {
 }
 
 @media (max-width: 575px) {
-  #wrapAbout .nav-link {
+  #wrapExperience .nav-link {
     padding: 15px;
   }
 
-  #wrapAbout .nav-link i {
+  #wrapExperience .nav-link i {
     font-size: 24px;
   }
 }
 
-#wrapAbout .tab-pane ul {
+#wrapExperience .tab-pane ul {
   padding: 0;
 }
-#wrapAbout .tab-pane ul li {
+#wrapExperience .tab-pane ul li {
   padding-bottom: 10px;
   word-break: break-word;
 }
 
-#wrapAbout .txt-subtab {
+#wrapExperience .txt-subtab {
   padding-bottom: 10px;
 }
 
-#wrapAbout .tab-pane p:last-child {
+#wrapExperience .tab-pane p:last-child {
   margin-bottom: 0;
 }
 
