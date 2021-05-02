@@ -401,10 +401,6 @@ section {
 
 /*** #wrapAbout ***/
 
-#wrapAbout .wrap-about {
-  /* text-align: center; */
-}
-
 @media screen and (max-width: 991px) {
   #wrapAbout .wrap-about {
     margin-top: 50px;
