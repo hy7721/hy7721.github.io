@@ -361,6 +361,12 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .btn-get-started {
+    font-size: 14px;
+  }
+}
+
 /*** #wrapFeature ***/
 
 #wrapFeature {
@@ -388,8 +394,8 @@ section {
   }
 
   #wrapFeature h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
